@@ -79,7 +79,12 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-   return NULL;
+  Vector* v=(Vector*)malloc(sizeof(int));
+  v->datos=malloc(sizeof(int)*n);
+  v->datos=0;
+  v->capacidad=n;
+
+   return v;
 }
 
 /*
